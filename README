@@ -1,0 +1,17 @@
+Indexer as a standalone tool works perfectly
+
+In recordio, rio_open, rio_close, and rio_lseek seem
+to work properly
+rio_read implemenation is complete and works fine
+
+rio_write works well with adding content at the end of 
+datafile.
+
+testio tests rio_open, close, and lseek
+fails when testing rio_read
+
+I could not successfully use linking to link recordio.o to
+testio
+I can use the recordio library successfully if I include 
+"recordio.c", but get linking errors when I replace
+"recordio.c" with "recordio.h"
